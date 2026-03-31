@@ -1,2 +1,2 @@
 # rock-paper-scissors
-scratch
+
