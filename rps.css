@@ -32,6 +32,9 @@ h1 {
 .choices button:hover {
     background: #5feb66;
 }
-
+.result {
+    margin-top: 30px;
+    font-size: 22px;
+}
 
 
