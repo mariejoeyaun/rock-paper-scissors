@@ -29,4 +29,9 @@ h1 {
     border-radius: 8px;
 }
 
+.choices button:hover {
+    background: #5feb66;
+}
+
+
 
