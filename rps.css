@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: #3a3a7c;
-    color: white;
+    background: #ffffff;
+    color: rgb(31, 121, 31);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -21,7 +21,6 @@ h1 {
     margin-bottom: 30px;
 }
 .choices button {
-    background: #4CAF50;
     border: none;
     padding: 15px 25px;
     margin: 10px;
@@ -29,6 +28,19 @@ h1 {
     color: white;
     border-radius: 8px;
 }
+
+.btnrock button {
+    background: #f84d94;
+}
+
+.btnpaper button {
+    background: #f1cc52;
+}
+
+.btnscissors button {
+     background: #5dbbe0;
+}
+
 
 .choices button:hover {
     background: #5feb66;
