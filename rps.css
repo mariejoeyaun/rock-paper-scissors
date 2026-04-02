@@ -10,3 +10,13 @@ body {
 .container {
     margin-top: 80px;
 }
+h1 {
+    margin-bottom: 20px;
+}
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
