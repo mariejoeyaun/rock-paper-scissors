@@ -20,5 +20,13 @@ h1 {
     font-size: 25px;
     margin-bottom: 30px;
 }
+.choices button {
+    background: #4CAF50;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+}
 
 
