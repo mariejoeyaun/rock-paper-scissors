@@ -28,9 +28,8 @@ h1 {
 
 .choices {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
+    justify-content: center;
+    gap: 10px;
     
 }
 .choices button {
