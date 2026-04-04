@@ -19,3 +19,10 @@ function Game(playerChoice){
 	? "YOU WIN!"
 	: "YOU LOSE!"
 }
+
+	const result = getResult(playerChoice, computerChoice);
+	resultDisplay.textContent = result;
+	playerDisplay.textContent = 'PLAYER: ${playerChoice}';
+	computerDisplay.textContent = 'COMPUTER: ${playerChoice}';
+
+	
