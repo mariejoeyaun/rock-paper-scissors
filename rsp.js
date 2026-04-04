@@ -1,11 +1,11 @@
 const playerDisplay = document.getElementById
 ("player-choice");
-const playerDisplay = document.getElementById
+const computerDisplay = document.getElementById
 ("computer-choice");
 const resultDisplay = document.getElementById
 ("resultDisplay");
 
-const choices = [ "Rock", "Paper", "Scissors"];
+const choices = [ "rock", "paper", "scissors"];
 
 function Game(playerChoice){
 	
@@ -18,21 +18,24 @@ function Game(playerChoice){
 	(playerChoice ===  "Scissors" && computerChoice === "Paper")
 	? "YOU WIN!"
 	: "YOU LOSE!"
-}
 
-	const result = getResult(playerChoice, computerChoice);
-	resultDisplay.textContent = result;
-	playerDisplay.textContent = 'PLAYER: ${playerChoice}';
-	computerDisplay.textContent = 'COMPUTER: ${playerChoice}';
+	  const result = getResult(playerChoice, computerChoice);
+
+    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
+    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
+    resultDisplay.textContent = result;
 
 	
-	resultDisplay.style.backgroundColor =
-	result === "IT'S A TIE!"
-	? "blue"
-	:result === "YOU WIN!"
-	? "green"
-	:"red";
-	resultDisplay.style.border =  "2px solid transparent"
-	resultDisplay.style.color "white";
+    resultDisplay.style.backgroundColor =
+        result === "IT'S A TIE!"
+            ? "blue"
+            : result === "YOU WIN!"
+            ? "green"
+            : "red";
+
+    resultDisplay.style.border = "2px solid transparent";
+    resultDisplay.style.color = "white";
+}
 
 
+	
