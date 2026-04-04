@@ -18,13 +18,8 @@ h1 {
     width: 750px;
     margin: 50px auto;     /* center it */
 }
-.scoreboard {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    font-size: 25px;
-    margin-bottom: 30px;
-}
+
+
 
 .choices {
     display: flex;
