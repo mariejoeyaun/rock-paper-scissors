@@ -26,3 +26,13 @@ function Game(playerChoice){
 	computerDisplay.textContent = 'COMPUTER: ${playerChoice}';
 
 	
+	resultDisplay.style.backgroundColor =
+	result === "IT'S A TIE!"
+	? "blue"
+	:result === "YOU WIN!"
+	? "green"
+	:"red";
+	resultDisplay.style.border =  "2px solid transparent"
+	resultDisplay.style.color "white";
+
+
