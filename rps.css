@@ -14,8 +14,8 @@ h1 {
 .container {
     border: 3px solid rgb(31, 121, 31);
     border-radius: 10px;   /* rounded corners */
-    padding: 20px;         /* space inside */
-    width: 400px;
+    padding: 10px;         /* space inside */
+    width: 750px;
     margin: 50px auto;     /* center it */
 }
 .scoreboard {
