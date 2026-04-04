@@ -60,12 +60,13 @@ h1 {
 
 #player-choice,
 #computer-choice{
+    padding-top: 20px;
     font-size: 1.8em;
     font-weight:600;
 }
 
 #resultDisplay {
-    font-size: 10px;
+    font-size: 20px;
     border: 3px solid rgb(31, 121, 31);
     border-radius: 0.5em;
     padding: 10px 50px;
