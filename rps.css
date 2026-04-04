@@ -6,13 +6,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.container {
-    margin-top: 80px;
-}
 h1 {
     margin-bottom: 20px;
 }
+
 .scoreboard {
     display: flex;
     justify-content: center;
