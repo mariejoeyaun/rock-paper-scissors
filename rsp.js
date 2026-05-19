@@ -21,6 +21,28 @@ function Game(playerChoice){
 	
 	const computerChoice= choices[Math.floor(Math.random() * 3)];
 
+     let result = "";
+
+    if (playerChoice === computerChoice) {
+        result = "IT'S A TIE!";
+        ties++;
+    }
+
+    else if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rock") ||
+        (playerChoice === "scissors" && computerChoice === "paper")
+    ) {
+        result = "YOU WIN!";
+        wins++;
+    }
+
+    else {
+        result = "YOU LOSE!";
+        losses++;
+    }
+
+    
 	const getResult = (playerChoice, computerChoice) =>
 	playerChoice === computerChoice ? "IT'S A TIE!" : 
 	(playerChoice === "rock" && computerChoice === "scissors") || 
