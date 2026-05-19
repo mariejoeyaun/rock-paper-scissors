@@ -13,9 +13,9 @@ function Game(playerChoice){
 
 	const getResult = (playerChoice, computerChoice) =>
 	playerChoice === computerChoice ? "IT'S A TIE!" : 
-	(playerChoice === "Rock" && computerChoice === "Scissors") || 
-	(playerChoice ===  "Paper" && computerChoice === "Rock") || 
-	(playerChoice ===  "Scissors" && computerChoice === "Paper")
+	(playerChoice === "rock" && computerChoice === "scissors") || 
+	(playerChoice ===  "paper" && computerChoice === "rock") || 
+	(playerChoice ===  "scissors" && computerChoice === "paper")
 	? "YOU WIN!"
 	: "YOU LOSE!"
 
