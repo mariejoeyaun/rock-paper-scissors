@@ -71,31 +71,25 @@ function Game(playerChoice){
 }
 
 
-	const getResult = (playerChoice, computerChoice) =>
-	playerChoice === computerChoice ? "IT'S A TIE!" : 
-	(playerChoice === "rock" && computerChoice === "scissors") || 
-	(playerChoice ===  "paper" && computerChoice === "rock") || 
-	(playerChoice ===  "scissors" && computerChoice === "paper")
-	? "YOU WIN!"
-	: "YOU LOSE!"
+// RESET FUNCTION
+function resetScore() {
 
-	  const result = getResult(playerChoice, computerChoice);
+    wins = 0;
+    losses = 0;
+    ties = 0;
 
-    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
-    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
-    resultDisplay.textContent = result;
+    winsDisplay.textContent = wins;
+    lossesDisplay.textContent = losses;
+    tiesDisplay.textContent = ties;
 
-	
-    resultDisplay.style.backgroundColor =
-        result === "IT'S A TIE!"
-            ? "blue"
-            : result === "YOU WIN!"
-            ? "green"
-            : "red";
+    playerDisplay.textContent = "PLAYER:";
+    computerDisplay.textContent = "COMPUTER:";
+    resultDisplay.textContent = "RESULT";
 
-    resultDisplay.style.border = "2px solid transparent";
-    resultDisplay.style.color = "white";
+    resultDisplay.style.backgroundColor = "white";
+    resultDisplay.style.color = "black";
+    resultDisplay.style.border =
+        "3px solid rgb(31, 121, 31)";
 }
-
 
 	
