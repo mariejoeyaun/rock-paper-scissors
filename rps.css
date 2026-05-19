@@ -113,3 +113,116 @@ h1 {
     word-wrap: break-word; 
 }
 
+
+/* RESET BUTTON */
+#resetBtn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(31, 121, 31);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: #5feb66;
+    color: black;
+}
+
+/* ========================= */
+/* TABLET RESPONSIVE DESIGN  */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .choices button {
+        font-size: 60px;
+        min-width: 120px;
+        padding: 15px;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.5rem;
+    }
+
+    .score-box {
+        min-width: 90px;
+        padding: 10px 15px;
+    }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE DESIGN  */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .scoreboard {
+        gap: 10px;
+    }
+
+    .score-box {
+        min-width: 80px;
+        padding: 8px 10px;
+    }
+
+    .score-box span {
+        font-size: 14px;
+    }
+
+    .score-box p {
+        font-size: 22px;
+    }
+
+    .choices {
+        gap: 5px;
+    }
+
+    .choices button {
+        font-size: 45px;
+        min-width: 90px;
+        padding: 12px;
+        margin: 5px;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.1rem;
+    }
+
+    #resultDisplay {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #resetBtn {
+        width: 100%;
+        font-size: 15px;
+    }
+}
