@@ -5,6 +5,11 @@ const computerDisplay = document.getElementById
 const resultDisplay = document.getElementById
 ("resultDisplay");
 
+const winsDisplay = document.getElementById("wins");
+const lossesDisplay = document.getElementById("losses");
+const tiesDisplay = document.getElementById("ties");
+
+
 const choices = [ "rock", "paper", "scissors"];
 
 function Game(playerChoice){
