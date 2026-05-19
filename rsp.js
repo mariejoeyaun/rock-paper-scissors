@@ -42,7 +42,35 @@ function Game(playerChoice){
         losses++;
     }
 
-    
+      // UPDATE TEXT
+    playerDisplay.textContent =
+        `PLAYER: ${playerChoice}`;
+
+    computerDisplay.textContent =
+        `COMPUTER: ${computerChoice}`;
+
+    resultDisplay.textContent = result;
+
+    // UPDATE SCOREBOARD
+    winsDisplay.textContent = wins;
+    lossesDisplay.textContent = losses;
+    tiesDisplay.textContent = ties;
+
+    // RESULT COLORS
+    resultDisplay.style.backgroundColor =
+        result === "IT'S A TIE!"
+            ? "blue"
+            : result === "YOU WIN!"
+            ? "green"
+            : "red";
+
+    resultDisplay.style.border =
+        "2px solid transparent";
+
+    resultDisplay.style.color = "white";
+}
+
+
 	const getResult = (playerChoice, computerChoice) =>
 	playerChoice === computerChoice ? "IT'S A TIE!" : 
 	(playerChoice === "rock" && computerChoice === "scissors") || 
