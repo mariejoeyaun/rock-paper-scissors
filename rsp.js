@@ -9,8 +9,13 @@ const winsDisplay = document.getElementById("wins");
 const lossesDisplay = document.getElementById("losses");
 const tiesDisplay = document.getElementById("ties");
 
-
 const choices = [ "rock", "paper", "scissors"];
+
+// SCORE VARIABLES
+let wins = 0;
+let losses = 0;
+let ties = 0;
+
 
 function Game(playerChoice){
 	
